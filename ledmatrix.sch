@@ -944,32 +944,6 @@ Text Label 2700 1350 0    60   ~ 0
 SCL
 Text Label 2700 1450 0    60   ~ 0
 SDA
-Text Label 1650 2950 2    60   ~ 0
-SCL
-Text Label 1650 3350 2    60   ~ 0
-SDA
-$Comp
-L TEST_1P W1
-U 1 1 5766B03E
-P 1650 2950
-F 0 "W1" H 1650 3220 50  0000 C CNN
-F 1 "TEST_1P" H 1650 3150 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1850 2950 50  0001 C CNN
-F 3 "" H 1850 2950 50  0000 C CNN
-	1    1650 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W2
-U 1 1 5766B419
-P 1650 3350
-F 0 "W2" H 1650 3620 50  0000 C CNN
-F 1 "TEST_1P" H 1650 3550 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1850 3350 50  0001 C CNN
-F 3 "" H 1850 3350 50  0000 C CNN
-	1    1650 3350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6600 2350 6750 2350
 Wire Wire Line
@@ -982,4 +956,23 @@ Connection ~ 6600 2300
 Wire Wire Line
 	2450 2650 2400 2650
 Connection ~ 2400 2850
+$Comp
+L CONN_01X04 P6
+U 1 1 578A6B55
+P 1800 2900
+F 0 "P6" H 1800 3150 50  0000 C CNN
+F 1 "CONN_01X04" V 1900 2900 50  0000 C CNN
+F 2 "lib.pretty:Conn-4" H 1800 2900 50  0001 C CNN
+F 3 "" H 1800 2900 50  0000 C CNN
+	1    1800 2900
+	1    0    0    -1  
+$EndComp
+Text Label 1600 2750 2    60   ~ 0
+INTB
+Text Label 1600 2850 2    60   ~ 0
+SDB
+Text Label 1600 3050 2    60   ~ 0
+SCL
+Text Label 1600 2950 2    60   ~ 0
+SDA
 $EndSCHEMATC

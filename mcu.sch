@@ -310,7 +310,7 @@ U 1 1 5533596A
 P 8750 3650
 F 0 "S72" H 8725 3875 50  0000 L BNN
 F 1 "TAC_SWITCH" H 8525 3450 50  0000 L BNN
-F 2 "lib.pretty:TACT_5.2x5.2" H 8750 3800 50  0001 C CNN
+F 2 "lib.pretty:PTS810" H 8750 3800 50  0001 C CNN
 F 3 "" H 8750 3650 60  0000 C CNN
 	1    8750 3650
 	1    0    0    -1  
@@ -541,7 +541,7 @@ U 1 1 575E7942
 P 3150 1050
 F 0 "P4" H 3150 1300 50  0000 C CNN
 F 1 "CONN_01X04" V 3250 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.00mm" H 3150 1050 50  0001 C CNN
+F 2 "lib.pretty:Conn-4" H 3150 1050 50  0001 C CNN
 F 3 "" H 3150 1050 50  0000 C CNN
 	1    3150 1050
 	1    0    0    -1  
@@ -572,10 +572,6 @@ F 3 "" H 2050 1250 50  0000 C CNN
 	1    2050 1250
 	0    -1   -1   0   
 $EndComp
-Text HLabel 4900 2250 0    40   3State ~ 0
-PTE1
-Text HLabel 4900 2350 0    40   3State ~ 0
-PTE2
 $Comp
 L +5V #PWR044
 U 1 1 57883411
@@ -612,7 +608,7 @@ U 1 1 578B56E9
 P 3950 1050
 F 0 "P2" H 3950 1400 50  0000 C CNN
 F 1 "CONN_01X06" V 4050 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.00mm" H 3950 1050 50  0001 C CNN
+F 2 "lib.pretty:Conn-6" H 3950 1050 50  0001 C CNN
 F 3 "" H 3950 1050 50  0000 C CNN
 	1    3950 1050
 	1    0    0    -1  
@@ -819,4 +815,23 @@ Wire Wire Line
 	1650 950  1600 950 
 Wire Wire Line
 	1650 1050 1600 1050
+Text Label 4900 2250 2    39   ~ 0
+RX1
+Text Label 4900 2350 2    39   ~ 0
+TX1
+$Comp
+L CONN_01X02 P5
+U 1 1 5789F16B
+P 4600 1050
+F 0 "P5" H 4600 1200 50  0000 C CNN
+F 1 "CONN_01X02" V 4700 1050 50  0000 C CNN
+F 2 "lib.pretty:Conn-2" H 4600 1050 50  0001 C CNN
+F 3 "" H 4600 1050 50  0000 C CNN
+	1    4600 1050
+	1    0    0    -1  
+$EndComp
+Text Label 4400 1100 2    39   ~ 0
+RX1
+Text Label 4400 1000 2    39   ~ 0
+TX1
 $EndSCHEMATC
